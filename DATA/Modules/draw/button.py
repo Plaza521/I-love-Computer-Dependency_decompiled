@@ -6,7 +6,7 @@ from PIL import ImageFont
 
 
 def settings(screen, width, height):
-    ttf = ImageFont.truetype("DATA/Arial.ttf", 30)
+    ttf = ImageFont.truetype("DATA/arial.ttf", 30)
 
     text = "Settings"
     width_button = 250
@@ -24,7 +24,7 @@ def settings(screen, width, height):
 
 
 def exit(screen, width, height, player):
-    ttf = ImageFont.truetype("DATA/Arial.ttf", 30)
+    ttf = ImageFont.truetype("DATA/arial.ttf", 30)
 
     text = "Exit"
     width_button = 250
@@ -42,7 +42,7 @@ def exit(screen, width, height, player):
 
 
 def play(screen, width, height, function):
-    ttf = ImageFont.truetype("DATA/Arial.ttf", 30)
+    ttf = ImageFont.truetype("DATA/arial.ttf", 30)
 
     text = "Play"
     width_button = 250

@@ -43,7 +43,7 @@ class Screen(object):
             button.exit(screen=self.screen, width=width, height=height, player=self.player)
             button.settings(screen=self.screen, width=width, height=height)
 
-            ttf = ImageFont.truetype("DATA/Arial.ttf", 50)
+            ttf = ImageFont.truetype("DATA/arial.ttf", 50)
 
             print_text(self.screen, 10, 610, f'Версия: {self.__version}', 20)
             print_text(self.screen, width / 2 - ttf.getsize(self.__name)[0] / 2, 35, f'{self.__name}', 50, font_color=(255, 255, 255))

@@ -44,7 +44,7 @@ def start():
             except:
                 with open("DATA/Player/player.json", "w") as file:
                     file.write(json.dumps(settings))
-
+                    
     return settings
 
 
