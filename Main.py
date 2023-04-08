@@ -32,8 +32,10 @@ while play:
         player.jump_start(player=player, block_group=block_group)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            print(f'''\xd0\xbc\xd0\xb8\xd0\xbd. - {round(fps.min())}\n\xd0\xbc\xd0\xb0\xd0\xba\xd1\x81. - {round(fps.max())}\n\xd1\x81\xd1\x80. - {round(fps.sum() / len(fps))}''')
+            print(f'''мин. - {round(fps.min())}
+макс. - {round(fps.max())}
+ср. - {round(fps.sum() / len(fps))}''')
             game.exit(player=screen.settings)
-            if round(clock.get_fps()) != 0:
-                fps = numpy.append(fps, round(clock.get_fps()))
+        if round(clock.get_fps()) != 0:
+            fps = numpy.append(fps, round(clock.get_fps()))
     clock.tick(FPS)
